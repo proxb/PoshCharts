@@ -27,14 +27,14 @@ Function Out-LineChart {
 
         .EXAMPLE
 
-            import-csv .\TrendReporting\EXE_LIB-N.csv|
-            out-linechart  -XField Date -YField1 TotalUsedGB -YField2 CapacityGB -Title 'EXE Library Report' `
+            import-csv .\TrendReporting\data.csv|
+            out-linechart  -XField Date -YField1 TotalUsedGB -YField2 CapacityGB -Title 'Data Report' `
             -YFieldTitle SizeGB -XFieldIntervalType Months -XFieldInterval 1 -enable3d
 
         .EXAMPLE
 
-            import-csv .\TrendReporting\EXE_LIB-N.csv|
-            out-linechart  -XField Date -YField1 TotalUsedGB -YField2 CapacityGB -Title 'EXE Library Report' `
+            import-csv .\TrendReporting\data.csv|
+            out-linechart  -XField Date -YField1 TotalUsedGB -YField2 CapacityGB -Title 'Data Report' `
             -YFieldTitle SizeGB -XFieldIntervalType Months -XFieldInterval 1 -ToFile -ToFile "C:\users\proxb\desktop\File.jpeg"
     #>
     [cmdletbinding()]
